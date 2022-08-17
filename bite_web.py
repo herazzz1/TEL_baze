@@ -29,6 +29,6 @@ def pildau():
             # print(modelis, kaina)
             # print(pavadinimas,modelis,kaina,)
             #---be atidarytų pakuočių
-            telefonas = Atsiskaitymas(pavadinimas,modelis,kaina,"bite")
+            telefonas = Atsiskaitymas(pavadinimas,modelis,kaina,"BITЕ ")
             session.add(telefonas)
     session.commit()

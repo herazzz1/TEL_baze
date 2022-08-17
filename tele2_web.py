@@ -28,6 +28,6 @@ def pildau():
         kaina = kaina.replace(',','.')
         kaina = round(float(kaina))
         kaina = int(kaina)
-        telefonas = Atsiskaitymas(pavadinimas,modelis,kaina,"tele2")
+        telefonas = Atsiskaitymas(pavadinimas,modelis,kaina,"TELE2 ")
         session.add(telefonas)
     session.commit()

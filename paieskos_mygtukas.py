@@ -54,7 +54,7 @@ class paieskos_m:
                     did_k = 9999
                 for i in telefonai:
                     if i.kaina > maz_k and i.kaina < did_k and (i.modelis.upper() == modelis.upper() or pavadinimas.upper() in i.pavadinimas.upper()):
-                        sarasas.append(f"{i.modelis} {i.pavadinimas} {i.parduotuve} {i.kaina} ")
+                        sarasas.append(f"{i.modelis} {i.pavadinimas} {i.parduotuve.upper()} {i.kaina} ")
             except:
                 self.klaida = Label(text="Kainoje veskite tik skaičius")
                 self.klaida.grid(row=4, column=1)

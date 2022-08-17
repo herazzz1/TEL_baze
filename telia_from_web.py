@@ -25,7 +25,7 @@ def mobiliakai():
                 #------atskiriu pavadinimą ir modelį
                     modelis = title.split(' ')[0]
                     pavadinimas = title.replace(modelis, '').lstrip()
-                    telefonas = Atsiskaitymas(modelis, pavadinimas, kaina, "telia")
+                    telefonas = Atsiskaitymas(modelis, pavadinimas, kaina, "TELIA ")
                     session.add(telefonas)
         except:
             pass
